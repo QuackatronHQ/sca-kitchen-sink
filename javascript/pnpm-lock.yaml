@@ -15,8 +15,8 @@ importers:
         specifier: 0.9.1
         version: 0.9.1
       express-fileupload:
-        specifier: 1.1.4
-        version: 1.1.4
+        specifier: 1.5.1
+        version: 1.5.1
       heroku-env:
         specifier: ^0.1.1
         version: 0.1.1
@@ -192,6 +192,10 @@ packages:
   busboy@0.2.14:
     resolution: {integrity: sha512-InWFDomvlkEj+xWLBfU3AvnbVYqeTWmQopiW0tWWEy5yehYm2YkGEc59sUmw/4ty5Zj/b0WHGs1LgecuBSBGrg==}
     engines: {node: '>=0.8.0'}
+
+  busboy@1.6.0:
+    resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
+    engines: {node: '>=10.16.0'}
 
   bytes@2.4.0:
     resolution: {integrity: sha512-SvUX8+c/Ga454a4fprIdIUzUN9xfd1YTvYh7ub5ZPJ+ZJ/+K2Bp6IpWGmnw8r3caLTsmhvJAKZz3qjIo9+XuCQ==}
@@ -453,10 +457,9 @@ packages:
   event-emitter@0.3.5:
     resolution: {integrity: sha512-D9rRn9y7kLPnJ+hMq7S/nhvoKwwvVJahBi2BPmx3bvbsEdK3W9ii8cBSGjP+72/LnM4n6fo3+dkCX5FeTQruXA==}
 
-  express-fileupload@1.1.4:
-    resolution: {integrity: sha512-/Fu4+pVQ1lED3jb17kqAjxYS3b/m0WWUSWBOCxBjdXc41SpXV1lUVc3LGAFLaLf6EkcUMzeAYRNJ7dWW9n/Jmw==}
-    engines: {node: '>=6.0.0'}
-    deprecated: Please upgrade express-fileupload to version 1.1.8+ due to a security vulnerability with the parseNested option
+  express-fileupload@1.5.1:
+    resolution: {integrity: sha512-LsYG1ALXEB7vlmjuSw8ABeOctMp8a31aUC5ZF55zuz7O2jLFnmJYrCv10py357ky48aEoBQ/9bVXgFynjvaPmA==}
+    engines: {node: '>=12.0.0'}
 
   express-session@1.14.1:
     resolution: {integrity: sha512-hbu5NGarL7Kh2Se2fVI5S2AoUzMxHY6um2QuTCYHXqzJ76OHTe7gnYdgMy9s4N/7D+4dg6nevkQLruoy93b9+g==}
@@ -1120,6 +1123,10 @@ packages:
     resolution: {integrity: sha512-jos8u++JKm0ARcSUTAZXOVC0mSox7Bhn6sBgty73P1f3JGf7yG2clTbBNHUdde/kdvP2FESam+vM6l8jBrNxHA==}
     engines: {node: '>=0.8.0'}
 
+  streamsearch@1.1.0:
+    resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
+    engines: {node: '>=10.0.0'}
+
   string-width@1.0.2:
     resolution: {integrity: sha512-0XsVpQLnVCXHJfyEs8tC0zpTVIr5PKKsQtkT29IwupnPTjtPmQ3xT/4yCREF9hYkV/3M3kzcUTSAZT6a6h81tw==}
     engines: {node: '>=0.10.0'}
@@ -1494,6 +1501,10 @@ snapshots:
       dicer: 0.2.5
       readable-stream: 1.1.14
 
+  busboy@1.6.0:
+    dependencies:
+      streamsearch: 1.1.0
+
   bytes@2.4.0: {}
 
   camelcase@1.2.1: {}
@@ -1752,9 +1763,9 @@ snapshots:
       d: 1.0.2
       es5-ext: 0.10.64
 
-  express-fileupload@1.1.4:
+  express-fileupload@1.5.1:
     dependencies:
-      busboy: 0.2.14
+      busboy: 1.6.0
 
   express-session@1.14.1:
     dependencies:
@@ -2496,6 +2507,8 @@ snapshots:
   stream-consume@0.1.1: {}
 
   streamsearch@0.1.2: {}
+
+  streamsearch@1.1.0: {}
 
   string-width@1.0.2:
     dependencies:
