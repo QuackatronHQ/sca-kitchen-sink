@@ -24,8 +24,8 @@ importers:
         specifier: 1.8.9
         version: 1.8.9
       lodash:
-        specifier: 4.9.0
-        version: 4.9.0
+        specifier: 4.17.21
+        version: 4.17.21
       mattermost-cloudnative-bootstrapper:
         specifier: ^1.0.0
         version: 1.0.0
@@ -718,9 +718,6 @@ packages:
 
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-
-  lodash@4.9.0:
-    resolution: {integrity: sha512-UGUdLhDm+6tXViVGFOiDt+3HXNxVpLPaEcqzoTowq9XtmsHTq1nskdpr6UR1XV3aM1eJaiFtwg0DarxFW/ypsA==}
 
   longest@1.0.1:
     resolution: {integrity: sha512-k+yt5n3l48JU4k8ftnKG6V7u32wyH2NfKzeMto9F/QRE0amxy/LayxwlvjjkZEIzqR+19IrtFO8p5kB9QaYUFg==}
@@ -2044,8 +2041,6 @@ snapshots:
   lodash.uniq@4.5.0: {}
 
   lodash@4.17.21: {}
-
-  lodash@4.9.0: {}
 
   longest@1.0.1: {}
 
