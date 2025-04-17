@@ -7,7 +7,6 @@ const io = new Server(3000);
 function fetchDataAndEmit(socket) {
     axios.get('https://jsonplaceholder.typicode.com/todos/1')
         .then((response) => {
-            console.log('API response:', response.data);
 
             // Send the API response back to the client
             socket.emit('apiResponse', response.data);
